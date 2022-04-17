@@ -3,10 +3,11 @@ package kyh.hellospring.service;
 import kyh.hellospring.domain.Member;
 import kyh.hellospring.repository.MemberRepository;
 
+import javax.transaction.Transactional;
 import java.util.List;
 import java.util.Optional;
 
-
+@Transactional
 public class MemberService {
 
     private final MemberRepository memberRepository;

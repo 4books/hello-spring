@@ -1,8 +1,15 @@
 package kyh.hellospring.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Column(name = "name")//DB의 컬럼명 지정
     private String name;
 
     public Long getId() {
