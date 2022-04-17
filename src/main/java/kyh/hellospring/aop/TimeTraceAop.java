@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 public class TimeTraceAop {
 
     @Around("execution(* kyh.hellospring..*(..))")
-    public Object execut(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
         long   start      = System.currentTimeMillis();
         System.out.println("Start " + joinPoint.toString());
         try {
