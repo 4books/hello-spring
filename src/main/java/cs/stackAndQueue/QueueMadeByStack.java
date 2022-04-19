@@ -47,5 +47,9 @@ public class QueueMadeByStack {
                 return "No Data";
             }
         }
+
+        int size(){
+            return inStack.size() + outStack.size();
+        }
     }
 }
